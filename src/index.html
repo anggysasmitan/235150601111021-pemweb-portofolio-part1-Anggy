@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anggy Porto</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="w-screen font-poppins overflow-x-hidden flex flex-col items-center"
+  >
+    <!-- navbar -->
+    <nav
+      class="w-full py-5 bg-transparent justify-center fixed top-0 z-50 hidden xl:flex"
+    >
+      <div
+        class="w-[90%] px-5 py-2 rounded-full bg-ungu md:flex md:flex-row flex-col justify-between items-center hidden"
+      >
+        <h1 class="font-bold text-2xl">Anggy Porto</h1>
+        <div>
+          <ul class="flex gap-10">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a
+          href="https://drive.google.com/file/d/1Ma2hA3sygIP58tSXZyO5afgy6mPM7NpR/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="px-10 py-2 rounded-3xl bg-biru-muda hover:bg-biru"
+          >CV
+        </a>
+      </div>
+    </nav>
+    <!-- nav mobile tab -->
+    <div
+      class="w-full flex justify-end xl:hidden bg-transparent fixed top-5 right-5 z-50"
+    >
+      <button
+        title="nav"
+        id="menu-btn"
+        class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div
+      id="menu"
+      class="w-48 flex z-50 justify-center flex-col xl:hidden bg-transparent fixed top-12 bg-white h-max right-5 p-4 gap-2"
+    >
+      <h1 class="font-bold text-2xl">Anggy Porto</h1>
+      <div class="flex flex-col w-full">
+        <a class="w-full h-full py-2 hover:bg-ungu" href="#">Home</a>
+        <a class="w-full h-full py-2 hover:bg-ungu" href="#about">About</a>
+        <a class="w-full h-full py-2 hover:bg-ungu" href="#experience"
+          >Experience</a
+        >
+        <a class="w-full h-full py-2 hover:bg-ungu" href="#skill">Skills</a>
+        <a class="w-full h-full py-2 hover:bg-ungu" href="#contact">Contact</a>
+      </div>
+      <a
+        href="https://drive.google.com/file/d/1Ma2hA3sygIP58tSXZyO5afgy6mPM7NpR/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full text-center py-2 rounded-3xl bg-biru-muda hover:bg-biru"
+      >
+        CV
+      </a>
+    </div>
+    <!-- isi -->
+    <main class="w-full h-full flex flex-col items-center">
+      <!-- home -->
+      <div
+        class="w-full md:min-h-[50vh] min-h-[80vh] xl:h-[95vh] bg-pink-muda flex justify-center items-center"
+      >
+        <div
+          class="w-[90%] flex xl:flex-row flex-col justify-center items-center h-screen xl:h-full xl:py-0 py-20"
+        >
+          <div
+            class="w-[80%] xl:w-[50%] h-full flex items-center justify-center"
+          >
+            <img src="./assets/anggy.png" alt="" class="w-[80%]"/>
+          </div>
+          <div
+            class="w-[80%] md:w-full xl:w-[50%] h-full flex flex-col items-center text-center xl:text-start justify-center gap-8"
+          >
+            <div class="flex w-full justify-center xl:justify-start">
+              <h1 class="text-xl md:text-4xl w-max">
+                Welcome to my portfolio!
+              </h1>
+              <span class="text-base md:text-xl">^^</span>
+            </div>
+            <p class="text-sm md:text-xl w-full">
+              ~ I'm Anggy Sasmita Ningrum. Here, you'll find my journey,
+              projects, and skills. Stick around and hopefully get inspired!
+              Let's have some fun exploring! ~
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- about -->
+      <div
+        id="about"
+        class="w-full h-full py-10 md:py-0 md:scroll-m-12 bg-pink md:h-screen flex flex-col items-center justify-center relative"
+      >
+        <img
+          src="./assets/hiasan1.png"
+          alt=""
+          class="absolute xl:-top-32 md:top-0 md:-left-80 xl:left-0 hidden md:block"
+        />
+        <img
+          src="./assets/hiasan2.png"
+          alt=""
+          class="absolute xl:-bottom-40 xl:-right-32 md:-bottom-10 md:-right-28 hidden md:block"
+        />
+        <img
+          src="./assets/hiasan1.png"
+          alt=""
+          class="absolute -top-28 -right-20 block md:hidden w-[80%]"
+        />
+        <img
+          src="./assets/hiasan2.png"
+          alt=""
+          class="absolute -top-28 -left-20 block md:hidden w-[80%]"
+        />
+        <div
+          class="w-[70%] flex flex-col items-center justify-center gap-10 text-center"
+        >
+          <h1 class="text-3xl md:text-4xl">About</h1>
+          <p class="text-lg md:text-xl">
+            Hello Everyone, I'm Anggy Sasmita Ningrum, with NIM 235150601111021
+            from the Faculty of Computer Science, majoring in Information
+            Technology Education. I'm passionate about making a meaningful
+            impact for my family in the future, and I'm excited about the
+            journey ahead to achieve that dream.
+
+            <br /><br />
+
+            When I'm not diving into tech projects or learning new things, you
+            can catch me chilling and getting lost in my favorite music—it's my
+            ultimate way to unwind and recharge. I believe a little vibe can go
+            a long way in keeping the energy alive! Fun fact: I'm always up for
+            trying new things, especially when it comes to exploring creativity
+            or tech innovations
+          </p>
+        </div>
+      </div>
+      <!-- experince -->
+      <div
+        id="experience"
+        class="w-full bg-pink-muda md:scroll-m-[-50px] py-40 h-full flex flex-col items-center justify-center"
+      >
+        <div class="w-[70%] flex flex-col items-center justify-center gap-20">
+          <div class="flex flex-col items-center justify-center gap-4">
+            <h1 class="text-4xl">Experince</h1>
+            <p class="text-lg md:text-xl">a little of my experience</p>
+          </div>
+          <div class="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-40">
+            <!-- OSIS -->
+            <div
+              class="group before:absolute before:bg-biru before:w-3 before:h-12 before:top-24 before:-right-2 before:-z-10 before:rounded-2xl before:shadow-inner before:shadow-gray-50 relative w-60 h-60 bg-biru shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+            >
+              <div
+                class="w-56 h-56 bg-neutral-900 shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-2xl bg-neutral-900 shadow-inner shadow-gray-50 w-52 h-52"
+                >
+                  <div
+                    class="group-hover:duration-300 hover:opacity-100 opacity-0 before:absolute before:w-12 before:h-12 before:bg-orange-800 before:rounded-full before:blur-xl before:top-16 relative flex flex-col justify-around items-center w-44 h-40 bg-neutral-900 text-gray-50"
+                  >
+                    <span class="text-xs">SMA Negeri 13 Banjarmasin</span>
+                    <span
+                      class="z-10 flex items-center text-6xl text-amber-600 [text-shadow:_2px_2px_#fff,_1px_2px_#fff]"
+                      >OSIS
+                    </span>
+                    <div class="text-gray-50 w-48 flex flex-row justify-evenly">
+                      <span class="text-xs font-bold">Ketua</span>
+                      <div class="flex flex-row items-center">
+                        <svg
+                          class="w-5 h-5 fill-red-500 animate-bounce"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class=""
+                            d="M23,27.6a15.8,15.8,0,0,1,22.4,0L50,32.2l4.6-4.6A15.8,15.8,0,0,1,77,50L50,77,23,50A15.8,15.8,0,0,1,23,27.6Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M80.2,40.7l-1.1-2-.2-.3.3-.3c2.2-14.7-21.3-25.6-20.7-21S57,38.1,45.4,31.8c-9.3-5.1-12.9,12.1-22.8,33.7C16.2,79.4,20.8,82.3,27,81l.3.4L29,83.3a1.4,1.4,0,0,0,1.8.5l.9-.3a1.6,1.6,0,0,0,1.1-1.9l-.5-2.5a38.2,38.2,0,0,0,4.5-2.7L38.6,78a1.8,1.8,0,0,0,2.4-.1l1.2-1.1a1.9,1.9,0,0,0,.4-1.9l-1-2.5L45.5,69l1.7,1.6a1.8,1.8,0,0,0,2.4-.1l.9-1a1.7,1.7,0,0,0,.4-1.8L50,65c5.6-5,11.9-10.9,17.3-15.8l.4.2,1.9,1.1a1.6,1.6,0,0,0,2.1-.2l.8-.8a1.6,1.6,0,0,0,.3-2.1l-1.3-2.1,3.2-3.1,2.2,1.5a1.8,1.8,0,0,0,2.2-.1l.8-.8A1.7,1.7,0,0,0,80.2,40.7Z"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M59.5,20.5a3.9,3.9,0,0,0-2.5-2,4.3,4.3,0,0,0-3.3.5,11.9,11.9,0,0,0-3.2,3.5,26,26,0,0,0-2.3,4.4,76.2,76.2,0,0,0-3.3,10.8,120.4,120.4,0,0,0-2.4,14.2,11.4,11.4,0,0,1-3.8-4.2c-1.3-2.7-1.5-6.1-1.5-10.5a4,4,0,0,0-2.5-3.7,3.8,3.8,0,0,0-4.3.9,27.7,27.7,0,1,0,39.2,0,62.4,62.4,0,0,1-5.3-5.8A42.9,42.9,0,0,1,59.5,20.5ZM58.4,70.3a11.9,11.9,0,0,1-20.3-8.4s3.5,2,9.9,2c0-4,2-15.9,5-17.9a21.7,21.7,0,0,0,5.4,7.5,11.8,11.8,0,0,1,3.5,8.4A12,12,0,0,1,58.4,70.3Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="text-gray-700 text-lg font-light">Anggy</span>
+                </div>
+              </div>
+            </div>
+            <!-- mpk -->
+            <div
+              class="group before:absolute before:bg-biru before:w-3 before:h-12 before:top-24 before:-right-2 before:-z-10 before:rounded-2xl before:shadow-inner before:shadow-gray-50 relative w-60 h-60 bg-biru shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+            >
+              <div
+                class="w-56 h-56 bg-neutral-900 shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-2xl bg-neutral-900 shadow-inner shadow-gray-50 w-52 h-52"
+                >
+                  <div
+                    class="group-hover:duration-300 hover:opacity-100 opacity-0 before:absolute before:w-12 before:h-12 before:bg-orange-800 before:rounded-full before:blur-xl before:top-16 relative flex flex-col justify-around items-center w-44 h-40 bg-neutral-900 text-gray-50"
+                  >
+                    <span class="text-xs">SMA Negeri 13 Banjarmasin</span>
+                    <span
+                      class="z-10 flex items-center text-6xl text-amber-600 [text-shadow:_2px_2px_#fff,_1px_2px_#fff]"
+                      >MPK
+                    </span>
+                    <div class="text-gray-50 w-48 flex flex-row justify-evenly">
+                      <span class="text-xs font-bold">Sekretaris</span>
+                      <div class="flex flex-row items-center">
+                        <svg
+                          class="w-5 h-5 fill-red-500 animate-bounce"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class=""
+                            d="M23,27.6a15.8,15.8,0,0,1,22.4,0L50,32.2l4.6-4.6A15.8,15.8,0,0,1,77,50L50,77,23,50A15.8,15.8,0,0,1,23,27.6Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M80.2,40.7l-1.1-2-.2-.3.3-.3c2.2-14.7-21.3-25.6-20.7-21S57,38.1,45.4,31.8c-9.3-5.1-12.9,12.1-22.8,33.7C16.2,79.4,20.8,82.3,27,81l.3.4L29,83.3a1.4,1.4,0,0,0,1.8.5l.9-.3a1.6,1.6,0,0,0,1.1-1.9l-.5-2.5a38.2,38.2,0,0,0,4.5-2.7L38.6,78a1.8,1.8,0,0,0,2.4-.1l1.2-1.1a1.9,1.9,0,0,0,.4-1.9l-1-2.5L45.5,69l1.7,1.6a1.8,1.8,0,0,0,2.4-.1l.9-1a1.7,1.7,0,0,0,.4-1.8L50,65c5.6-5,11.9-10.9,17.3-15.8l.4.2,1.9,1.1a1.6,1.6,0,0,0,2.1-.2l.8-.8a1.6,1.6,0,0,0,.3-2.1l-1.3-2.1,3.2-3.1,2.2,1.5a1.8,1.8,0,0,0,2.2-.1l.8-.8A1.7,1.7,0,0,0,80.2,40.7Z"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M59.5,20.5a3.9,3.9,0,0,0-2.5-2,4.3,4.3,0,0,0-3.3.5,11.9,11.9,0,0,0-3.2,3.5,26,26,0,0,0-2.3,4.4,76.2,76.2,0,0,0-3.3,10.8,120.4,120.4,0,0,0-2.4,14.2,11.4,11.4,0,0,1-3.8-4.2c-1.3-2.7-1.5-6.1-1.5-10.5a4,4,0,0,0-2.5-3.7,3.8,3.8,0,0,0-4.3.9,27.7,27.7,0,1,0,39.2,0,62.4,62.4,0,0,1-5.3-5.8A42.9,42.9,0,0,1,59.5,20.5ZM58.4,70.3a11.9,11.9,0,0,1-20.3-8.4s3.5,2,9.9,2c0-4,2-15.9,5-17.9a21.7,21.7,0,0,0,5.4,7.5,11.8,11.8,0,0,1,3.5,8.4A12,12,0,0,1,58.4,70.3Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="text-gray-700 text-lg font-light">Anggy</span>
+                </div>
+              </div>
+            </div>
+            <!-- Debug -->
+            <div
+              class="group before:absolute before:bg-biru before:w-3 before:h-12 before:top-24 before:-right-2 before:-z-10 before:rounded-2xl before:shadow-inner before:shadow-gray-50 relative w-60 h-60 bg-biru shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+            >
+              <div
+                class="w-56 h-56 bg-neutral-900 shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-2xl bg-neutral-900 shadow-inner shadow-gray-50 w-52 h-52"
+                >
+                  <div
+                    class="group-hover:duration-300 hover:opacity-100 opacity-0 before:absolute before:w-12 before:h-12 before:bg-orange-800 before:rounded-full before:blur-xl before:top-16 relative flex flex-col justify-around items-center w-44 h-40 bg-neutral-900 text-gray-50"
+                  >
+                    <span class="text-xs">Fakultas Ilmu Komputer</span>
+                    <span
+                      class="z-10 flex items-center text-6xl text-amber-600 [text-shadow:_2px_2px_#fff,_1px_2px_#fff]"
+                    >
+                      DEBUG
+                    </span>
+                    <div class="text-gray-50 w-48 flex flex-row justify-evenly">
+                      <span class="text-xs font-bold">Staff Acara</span>
+                      <div class="flex flex-row items-center">
+                        <svg
+                          class="w-5 h-5 fill-red-500 animate-bounce"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class=""
+                            d="M23,27.6a15.8,15.8,0,0,1,22.4,0L50,32.2l4.6-4.6A15.8,15.8,0,0,1,77,50L50,77,23,50A15.8,15.8,0,0,1,23,27.6Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M80.2,40.7l-1.1-2-.2-.3.3-.3c2.2-14.7-21.3-25.6-20.7-21S57,38.1,45.4,31.8c-9.3-5.1-12.9,12.1-22.8,33.7C16.2,79.4,20.8,82.3,27,81l.3.4L29,83.3a1.4,1.4,0,0,0,1.8.5l.9-.3a1.6,1.6,0,0,0,1.1-1.9l-.5-2.5a38.2,38.2,0,0,0,4.5-2.7L38.6,78a1.8,1.8,0,0,0,2.4-.1l1.2-1.1a1.9,1.9,0,0,0,.4-1.9l-1-2.5L45.5,69l1.7,1.6a1.8,1.8,0,0,0,2.4-.1l.9-1a1.7,1.7,0,0,0,.4-1.8L50,65c5.6-5,11.9-10.9,17.3-15.8l.4.2,1.9,1.1a1.6,1.6,0,0,0,2.1-.2l.8-.8a1.6,1.6,0,0,0,.3-2.1l-1.3-2.1,3.2-3.1,2.2,1.5a1.8,1.8,0,0,0,2.2-.1l.8-.8A1.7,1.7,0,0,0,80.2,40.7Z"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M59.5,20.5a3.9,3.9,0,0,0-2.5-2,4.3,4.3,0,0,0-3.3.5,11.9,11.9,0,0,0-3.2,3.5,26,26,0,0,0-2.3,4.4,76.2,76.2,0,0,0-3.3,10.8,120.4,120.4,0,0,0-2.4,14.2,11.4,11.4,0,0,1-3.8-4.2c-1.3-2.7-1.5-6.1-1.5-10.5a4,4,0,0,0-2.5-3.7,3.8,3.8,0,0,0-4.3.9,27.7,27.7,0,1,0,39.2,0,62.4,62.4,0,0,1-5.3-5.8A42.9,42.9,0,0,1,59.5,20.5ZM58.4,70.3a11.9,11.9,0,0,1-20.3-8.4s3.5,2,9.9,2c0-4,2-15.9,5-17.9a21.7,21.7,0,0,0,5.4,7.5,11.8,11.8,0,0,1,3.5,8.4A12,12,0,0,1,58.4,70.3Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="text-gray-700 text-lg font-light">Anggy</span>
+                </div>
+              </div>
+            </div>
+            <!-- Sprint -->
+            <div
+              class="group before:absolute before:bg-biru before:w-3 before:h-12 before:top-24 before:-right-2 before:-z-10 before:rounded-2xl before:shadow-inner before:shadow-gray-50 relative w-60 h-60 bg-biru shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+            >
+              <div
+                class="w-56 h-56 bg-neutral-900 shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-2xl bg-neutral-900 shadow-inner shadow-gray-50 w-52 h-52"
+                >
+                  <div
+                    class="group-hover:duration-300 hover:opacity-100 opacity-0 before:absolute before:w-12 before:h-12 before:bg-orange-800 before:rounded-full before:blur-xl before:top-16 relative flex flex-col justify-around items-center w-44 h-40 bg-neutral-900 text-gray-50"
+                  >
+                    <span class="text-xs">Fakultas Ilmu Komputer</span>
+                    <span
+                      class="z-10 flex items-center text-6xl text-amber-600 [text-shadow:_2px_2px_#fff,_1px_2px_#fff]"
+                    >
+                      Sprint
+                    </span>
+                    <div class="text-gray-50 w-48 flex flex-row justify-evenly">
+                      <span class="text-xs font-bold">Staff DDM</span>
+                      <div class="flex flex-row items-center">
+                        <svg
+                          class="w-5 h-5 fill-red-500 animate-bounce"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class=""
+                            d="M23,27.6a15.8,15.8,0,0,1,22.4,0L50,32.2l4.6-4.6A15.8,15.8,0,0,1,77,50L50,77,23,50A15.8,15.8,0,0,1,23,27.6Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M80.2,40.7l-1.1-2-.2-.3.3-.3c2.2-14.7-21.3-25.6-20.7-21S57,38.1,45.4,31.8c-9.3-5.1-12.9,12.1-22.8,33.7C16.2,79.4,20.8,82.3,27,81l.3.4L29,83.3a1.4,1.4,0,0,0,1.8.5l.9-.3a1.6,1.6,0,0,0,1.1-1.9l-.5-2.5a38.2,38.2,0,0,0,4.5-2.7L38.6,78a1.8,1.8,0,0,0,2.4-.1l1.2-1.1a1.9,1.9,0,0,0,.4-1.9l-1-2.5L45.5,69l1.7,1.6a1.8,1.8,0,0,0,2.4-.1l.9-1a1.7,1.7,0,0,0,.4-1.8L50,65c5.6-5,11.9-10.9,17.3-15.8l.4.2,1.9,1.1a1.6,1.6,0,0,0,2.1-.2l.8-.8a1.6,1.6,0,0,0,.3-2.1l-1.3-2.1,3.2-3.1,2.2,1.5a1.8,1.8,0,0,0,2.2-.1l.8-.8A1.7,1.7,0,0,0,80.2,40.7Z"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M59.5,20.5a3.9,3.9,0,0,0-2.5-2,4.3,4.3,0,0,0-3.3.5,11.9,11.9,0,0,0-3.2,3.5,26,26,0,0,0-2.3,4.4,76.2,76.2,0,0,0-3.3,10.8,120.4,120.4,0,0,0-2.4,14.2,11.4,11.4,0,0,1-3.8-4.2c-1.3-2.7-1.5-6.1-1.5-10.5a4,4,0,0,0-2.5-3.7,3.8,3.8,0,0,0-4.3.9,27.7,27.7,0,1,0,39.2,0,62.4,62.4,0,0,1-5.3-5.8A42.9,42.9,0,0,1,59.5,20.5ZM58.4,70.3a11.9,11.9,0,0,1-20.3-8.4s3.5,2,9.9,2c0-4,2-15.9,5-17.9a21.7,21.7,0,0,0,5.4,7.5,11.8,11.8,0,0,1,3.5,8.4A12,12,0,0,1,58.4,70.3Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="text-gray-700 text-lg font-light">Anggy</span>
+                </div>
+              </div>
+            </div>
+            <!-- SAN -->
+            <div
+              class="group before:absolute before:bg-biru before:w-3 before:h-12 before:top-24 before:-right-2 before:-z-10 before:rounded-2xl before:shadow-inner before:shadow-gray-50 relative w-60 h-60 bg-biru shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+            >
+              <div
+                class="w-56 h-56 bg-neutral-900 shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-2xl bg-neutral-900 shadow-inner shadow-gray-50 w-52 h-52"
+                >
+                  <div
+                    class="group-hover:duration-300 hover:opacity-100 opacity-0 before:absolute before:w-12 before:h-12 before:bg-orange-800 before:rounded-full before:blur-xl before:top-16 relative flex flex-col justify-around items-center w-44 h-40 bg-neutral-900 text-gray-50"
+                  >
+                    <span class="text-xs">Senyum Anak Nusantara</span>
+                    <span
+                      class="z-10 flex items-center text-6xl text-amber-600 [text-shadow:_2px_2px_#fff,_1px_2px_#fff]"
+                    >
+                      SAN
+                    </span>
+                    <div class="text-gray-50 w-48 flex flex-row justify-evenly">
+                      <span class="text-xs font-bold">Divisi Acara</span>
+                      <div class="flex flex-row items-center">
+                        <svg
+                          class="w-5 h-5 fill-red-500 animate-bounce"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class=""
+                            d="M23,27.6a15.8,15.8,0,0,1,22.4,0L50,32.2l4.6-4.6A15.8,15.8,0,0,1,77,50L50,77,23,50A15.8,15.8,0,0,1,23,27.6Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M80.2,40.7l-1.1-2-.2-.3.3-.3c2.2-14.7-21.3-25.6-20.7-21S57,38.1,45.4,31.8c-9.3-5.1-12.9,12.1-22.8,33.7C16.2,79.4,20.8,82.3,27,81l.3.4L29,83.3a1.4,1.4,0,0,0,1.8.5l.9-.3a1.6,1.6,0,0,0,1.1-1.9l-.5-2.5a38.2,38.2,0,0,0,4.5-2.7L38.6,78a1.8,1.8,0,0,0,2.4-.1l1.2-1.1a1.9,1.9,0,0,0,.4-1.9l-1-2.5L45.5,69l1.7,1.6a1.8,1.8,0,0,0,2.4-.1l.9-1a1.7,1.7,0,0,0,.4-1.8L50,65c5.6-5,11.9-10.9,17.3-15.8l.4.2,1.9,1.1a1.6,1.6,0,0,0,2.1-.2l.8-.8a1.6,1.6,0,0,0,.3-2.1l-1.3-2.1,3.2-3.1,2.2,1.5a1.8,1.8,0,0,0,2.2-.1l.8-.8A1.7,1.7,0,0,0,80.2,40.7Z"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M59.5,20.5a3.9,3.9,0,0,0-2.5-2,4.3,4.3,0,0,0-3.3.5,11.9,11.9,0,0,0-3.2,3.5,26,26,0,0,0-2.3,4.4,76.2,76.2,0,0,0-3.3,10.8,120.4,120.4,0,0,0-2.4,14.2,11.4,11.4,0,0,1-3.8-4.2c-1.3-2.7-1.5-6.1-1.5-10.5a4,4,0,0,0-2.5-3.7,3.8,3.8,0,0,0-4.3.9,27.7,27.7,0,1,0,39.2,0,62.4,62.4,0,0,1-5.3-5.8A42.9,42.9,0,0,1,59.5,20.5ZM58.4,70.3a11.9,11.9,0,0,1-20.3-8.4s3.5,2,9.9,2c0-4,2-15.9,5-17.9a21.7,21.7,0,0,0,5.4,7.5,11.8,11.8,0,0,1,3.5,8.4A12,12,0,0,1,58.4,70.3Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="text-gray-700 text-lg font-light">Anggy</span>
+                </div>
+              </div>
+            </div>
+            <!-- SOS DSI -->
+            <div
+              class="group before:absolute before:bg-biru before:w-3 before:h-12 before:top-24 before:-right-2 before:-z-10 before:rounded-2xl before:shadow-inner before:shadow-gray-50 relative w-60 h-60 bg-biru shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+            >
+              <div
+                class="w-56 h-56 bg-neutral-900 shadow-inner shadow-gray-50 flex justify-center items-center rounded-3xl"
+              >
+                <div
+                  class="flex flex-col items-center justify-center rounded-2xl bg-neutral-900 shadow-inner shadow-gray-50 w-52 h-52"
+                >
+                  <div
+                    class="group-hover:duration-300 hover:opacity-100 opacity-0 before:absolute before:w-12 before:h-12 before:bg-orange-800 before:rounded-full before:blur-xl before:top-16 relative flex flex-col justify-around items-center w-44 h-40 bg-neutral-900 text-gray-50"
+                  >
+                    <span class="text-xs w-full text-center"
+                      >Departemen Sistem Informasi FILKOM</span
+                    >
+                    <span
+                      class="z-10 flex items-center text-6xl text-amber-600 [text-shadow:_2px_2px_#fff,_1px_2px_#fff]"
+                    >
+                      SOS
+                    </span>
+                    <div class="text-gray-50 w-48 flex flex-row justify-evenly">
+                      <span class="text-xs font-bold">Fasilitator</span>
+                      <div class="flex flex-row items-center">
+                        <svg
+                          class="w-5 h-5 fill-red-500 animate-bounce"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class=""
+                            d="M23,27.6a15.8,15.8,0,0,1,22.4,0L50,32.2l4.6-4.6A15.8,15.8,0,0,1,77,50L50,77,23,50A15.8,15.8,0,0,1,23,27.6Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M80.2,40.7l-1.1-2-.2-.3.3-.3c2.2-14.7-21.3-25.6-20.7-21S57,38.1,45.4,31.8c-9.3-5.1-12.9,12.1-22.8,33.7C16.2,79.4,20.8,82.3,27,81l.3.4L29,83.3a1.4,1.4,0,0,0,1.8.5l.9-.3a1.6,1.6,0,0,0,1.1-1.9l-.5-2.5a38.2,38.2,0,0,0,4.5-2.7L38.6,78a1.8,1.8,0,0,0,2.4-.1l1.2-1.1a1.9,1.9,0,0,0,.4-1.9l-1-2.5L45.5,69l1.7,1.6a1.8,1.8,0,0,0,2.4-.1l.9-1a1.7,1.7,0,0,0,.4-1.8L50,65c5.6-5,11.9-10.9,17.3-15.8l.4.2,1.9,1.1a1.6,1.6,0,0,0,2.1-.2l.8-.8a1.6,1.6,0,0,0,.3-2.1l-1.3-2.1,3.2-3.1,2.2,1.5a1.8,1.8,0,0,0,2.2-.1l.8-.8A1.7,1.7,0,0,0,80.2,40.7Z"
+                          ></path>
+                        </svg>
+                        <svg
+                          class="w-5 h-5 fill-current"
+                          height="100"
+                          preserveAspectRatio="xMidYMid meet"
+                          viewBox="0 0 100 100"
+                          width="100"
+                          x="0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          y="0"
+                        >
+                          <path
+                            class="svg-fill-primary"
+                            d="M59.5,20.5a3.9,3.9,0,0,0-2.5-2,4.3,4.3,0,0,0-3.3.5,11.9,11.9,0,0,0-3.2,3.5,26,26,0,0,0-2.3,4.4,76.2,76.2,0,0,0-3.3,10.8,120.4,120.4,0,0,0-2.4,14.2,11.4,11.4,0,0,1-3.8-4.2c-1.3-2.7-1.5-6.1-1.5-10.5a4,4,0,0,0-2.5-3.7,3.8,3.8,0,0,0-4.3.9,27.7,27.7,0,1,0,39.2,0,62.4,62.4,0,0,1-5.3-5.8A42.9,42.9,0,0,1,59.5,20.5ZM58.4,70.3a11.9,11.9,0,0,1-20.3-8.4s3.5,2,9.9,2c0-4,2-15.9,5-17.9a21.7,21.7,0,0,0,5.4,7.5,11.8,11.8,0,0,1,3.5,8.4A12,12,0,0,1,58.4,70.3Z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="text-gray-700 text-lg font-light">Anggy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./assets/foto.png"
+              alt=""
+              class="rounded-2xl"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- skill -->
+      <div
+        id="skill"
+        class="w-full bg-pink scroll-m-40 md:scroll-m-36 h-[60vh] flex flex-col items-center justify-center"
+      >
+        <div class="w-[70%] flex flex-col items-center justify-center gap-20">
+          <h1 class="text-4xl">Skills</h1>
+
+          <div class="flex flex-wrap items-center justify-center w-full gap-5">
+            <div
+              class="border text-gray-50 duration-300 relative group cursor-pointer overflow-hidden h-16 w-48 rounded-md bg-neutral-800 p-2 font-extrabold hover:bg-sky-700"
+            >
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150 duration-700 right-12 top-12 bg-yellow-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-12 h-12 rounded-full group-hover:scale-150 duration-700 right-20 -top-6 bg-orange-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-8 h-8 rounded-full group-hover:scale-150 duration-700 right-32 top-6 bg-pink-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-4 h-4 rounded-full group-hover:scale-150 duration-700 right-2 top-12 bg-red-600"
+              ></div>
+              <p class="z-10 absolute bottom-2 left-2">Technical Teaching</p>
+            </div>
+            <div
+              class="border text-gray-50 duration-300 relative group cursor-pointer overflow-hidden h-16 w-48 rounded-md bg-neutral-800 p-2 font-extrabold hover:bg-sky-700"
+            >
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150 duration-700 right-12 top-12 bg-yellow-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-12 h-12 rounded-full group-hover:scale-150 duration-700 right-20 -top-6 bg-orange-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-8 h-8 rounded-full group-hover:scale-150 duration-700 right-32 top-6 bg-pink-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-4 h-4 rounded-full group-hover:scale-150 duration-700 right-2 top-12 bg-red-600"
+              ></div>
+              <p class="z-10 absolute bottom-2 left-2">Data Processing</p>
+            </div>
+            <div
+              class="border text-gray-50 duration-300 relative group cursor-pointer overflow-hidden h-16 w-48 rounded-md bg-neutral-800 p-2 font-extrabold hover:bg-sky-700"
+            >
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150 duration-700 right-12 top-12 bg-yellow-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-12 h-12 rounded-full group-hover:scale-150 duration-700 right-20 -top-6 bg-orange-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-8 h-8 rounded-full group-hover:scale-150 duration-700 right-32 top-6 bg-pink-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-4 h-4 rounded-full group-hover:scale-150 duration-700 right-2 top-12 bg-red-600"
+              ></div>
+              <p class="z-10 absolute bottom-2 left-2">Good Time Management</p>
+            </div>
+            <div
+              class="border text-gray-50 duration-300 relative group cursor-pointer overflow-hidden h-16 w-48 rounded-md bg-neutral-800 p-2 font-extrabold hover:bg-sky-700"
+            >
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-16 h-16 rounded-full group-hover:scale-150 duration-700 right-12 top-12 bg-yellow-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-12 h-12 rounded-full group-hover:scale-150 duration-700 right-20 -top-6 bg-orange-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-8 h-8 rounded-full group-hover:scale-150 duration-700 right-32 top-6 bg-pink-500"
+              ></div>
+              <div
+                class="absolute group-hover:-top-1 group-hover:-right-2 z-10 w-4 h-4 rounded-full group-hover:scale-150 duration-700 right-2 top-12 bg-red-600"
+              ></div>
+              <p class="z-10 absolute bottom-2 left-2">Careful</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <div
+        id="contact"
+        class="w-full md:scroll-m-20 bg-pink-muda h-full xl:py-20 py-10 xl:h-full flex flex-col items-center justify-center"
+      >
+        <div class="w-[70%] flex flex-col items-center justify-center gap-20">
+          <h1 class="text-4xl">Contact</h1>
+          <div
+            class="flex xl:flex-row flex-col-reverse items-center justify-center w-full h-full xl:gap-0 gap-5"
+          >
+            <div
+              class="xl:w-[50%] md:w-[90%] w-full xl:p-10 h-full flex items-center justify-center"
+            >
+              <form id="contactForm" class="space-y-4 w-full">
+                <div class="flex flex-col gap-5">
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-700"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="bg-ungu text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-purple-400 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="flex flex-col gap-5">
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-gray-700"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="bg-ungu text-gray-200 border-0 rounded-md p-2 mb-4 focus:bg-purple-400 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150 w-full"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-biru-muda text-black font-bold py-2 px-4 rounded-md mt-4 hover:bg-biru transition ease-in-out duration-150 w-full"
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+            <div
+              class="xl:w-[50%] w-[90%] p-10 h-full flex flex-col items-center justify-center rounded-2xl bg-ungu gap-10"
+            >
+              <span class="text-xs md:text-lg">
+                feel free to reach out!^^
+              </span>
+              <div class="flex xl:gap-20 gap-10">
+                <div class="flex justify-center items-center">
+                  <button
+                    href="/"
+                    class="group flex justify-center p-2 rounded-md text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-white hover:to-black"
+                  >
+                    <img src="./assets/ig.png" alt="" />
+                    <span
+                      class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm text-sm xl:group-hover:text-lg xl:text-lg group-hover:-translate-y-10 duration-700"
+                    >
+                      @anggyssmta__
+                    </span>
+                  </button>
+                </div>
+                <div class="flex justify-center items-center">
+                  <button
+                    href="/"
+                    class="group flex justify-center p-2 rounded-md text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-white hover:to-black"
+                  >
+                    <img src="./assets/gmail.png" alt="" />
+                    <span
+                      class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 roup-hover:text-sm text-sm xl:group-hover:text-lg xl:text-lg group-hover:-translate-y-10 md:group-hover:-translate-x-0 group-hover:-translate-x-10 duration-700"
+                    >
+                      anggysasmita744@gmail.com
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <p class="text-center font-medium text-lg md:text-xl">
+                " When life gets tough, turn up the volume and let the music
+                drown out the noise! "
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="w-full flex justify-center bg-ungu py-5">
+      Copyright by Anggy Sasmita | 2024
+    </footer>
+
+    <!-- js untuk kirim pesan lewat email -->
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const message = document.getElementById("message").value;
+
+          const email = "anggysasmita744@gmail.com";
+          const subject = "Pesan untuk Anggy";
+          const body = `Name: ${name}
+           Message: ${message}`;
+
+          window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+          )}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+
+    <!-- js untuk toggle navbar mobile -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      menu.classList.add("hidden");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
