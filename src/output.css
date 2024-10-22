@@ -1481,54 +1481,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .xl\:-top-20 {
-    top: -5rem;
-  }
-
-  .xl\:bottom-0 {
-    bottom: 0px;
-  }
-
-  .xl\:left-0 {
-    left: 0px;
-  }
-
-  .xl\:right-0 {
-    right: 0px;
-  }
-
-  .xl\:-top-40 {
-    top: -10rem;
-  }
-
-  .xl\:-top-3 {
-    top: -0.75rem;
-  }
-
-  .xl\:-top-32 {
-    top: -8rem;
-  }
-
-  .xl\:-right-0 {
-    right: -0px;
-  }
-
-  .xl\:-right-10 {
-    right: -2.5rem;
-  }
-
-  .xl\:-right-20 {
-    right: -5rem;
-  }
-
-  .xl\:-right-40 {
-    right: -10rem;
-  }
-
-  .xl\:-bottom-0 {
-    bottom: -0px;
-  }
-
   .xl\:-bottom-40 {
     bottom: -10rem;
   }
@@ -1537,16 +1489,20 @@ video {
     right: -8rem;
   }
 
+  .xl\:-top-32 {
+    top: -8rem;
+  }
+
+  .xl\:left-0 {
+    left: 0px;
+  }
+
   .xl\:flex {
     display: flex;
   }
 
   .xl\:hidden {
     display: none;
-  }
-
-  .xl\:h-\[90vh\] {
-    height: 90vh;
   }
 
   .xl\:h-\[95vh\] {
@@ -1599,11 +1555,6 @@ video {
     padding-bottom: 5rem;
   }
 
-  .xl\:py-40 {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-
   .xl\:text-start {
     text-align: start;
   }
@@ -1616,5 +1567,11 @@ video {
   .group:hover .xl\:group-hover\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:w-\[90\%\] {
+    width: 90%;
   }
 }
